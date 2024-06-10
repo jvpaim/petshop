@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.topo {
+    background-color: #46204D;
+    padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+#nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#nav-menu ul li {
+    margin-right: 20px;
+}
+
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.texto {
+    text-align: center;
+    padding: 20px;
+}
+
+.texto h1 {
+    margin-bottom: 20px;
+}
+
+.texto p {
+    margin-bottom: 20px;
+}
+
+.botao {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.botao button {
+    background-color: #8A2BE2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.botao a {
+    color: white;
+    text-decoration: none;
+}
+
+.rodape {
+    background-color: #46204D;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

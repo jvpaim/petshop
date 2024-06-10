@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container{
+    margin: 0 2em;
+}
+/* Estilo para topo */
+.topo {
+    background-color: #46204D;
+    height: 134px;
+}
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 65px;
+    color: white;
+    margin-top: 30px;
+    width: 550px;
+    height: 59px;
+}
+#nav-menu {
+    display: flex;
+    float: right;
+    justify-content: end;
+    width: 100%;
+    margin-top: 40px;
+}
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: end;
+    padding-right: 50px;
+    margin-top: 10px;
+}
+
+/* Estilo para menu hambúrguer e navegação mobile */
+.menu-hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: #46204D;
+    padding-left: 65px;
+}
+.mobile-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+/* Media Query para telas menores */
+@media screen and (max-width: 768px) {
+    #nav-menu {
+        display: none;
+    }
+    .menu-hamburger {
+        display: block;
+    }
+}
+
+.header-container{
+    width: 100%;
+}
+.titulo-principal{
+    margin-left: 94px;
+    margin-top: 50px;
+    width: 523px;
+}
+.titulo-principal h1{
+    font-size: 22px;
+}
+.card_pet {
+    font-family: "Inter";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    width: 100%; /* Alteração */
+    max-width: 1200px; /* Nova */
+    margin: auto;
+}
+
+.card__container {
+    display: flex;
+    transition: transform 0.5s ease;
+    width: fit-content; /* Nova */
+}
+
+.card__cachorros {
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    margin: 10px;
+    height: 490px;
+    width: 230px;
+    box-shadow: 0 5px 10px 2px rgb(24, 6, 24);
+    flex: 0 0 auto;
+    /* Nova regra para tornar o tamanho do cartão responsivo */
+    width: calc(100% / 3 - 20px); /* Calcula o tamanho do cartão baseado no número de cartões visíveis */
+    max-width: 300px; /* Limita a largura máxima do cartão */
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    .card__cachorros {
+        width: calc(100% / 2 - 20px); /* Define 2 cartões por linha */
+        max-width: none; /* Remove a largura máxima do cartão */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card__cachorros {
+        width: 100%; /* Um cartão por linha em telas pequenas */
+        max-width: none; /* Remove a largura máxima do cartão */
+    }
+}
+
+/* Estilos para as setas */
+#seta_esquerda, #seta_direita {
+    color: #46204D;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1; /* Ajusta o z-index para garantir que as setas estejam acima dos cartões */
+}
+
+#seta_esquerda {
+    left: 0;
+}
+
+#seta_direita {
+    right: 0;
+}
+
+.informacoes_um {
+    margin: 15px; /* Ajuste de margem */
+}
+
+/* Estilos para os textos dentro dos cartões */
+.nome span, .especie span, .idade span, .peso span, .porte span, .local span, .sobre_pet span, .sexo span {
+    font-size: 12px; /* Ajuste de tamanho de fonte */
+}
+
+.nome p, .especie p, .idade p, .peso p, .porte p, .local p, .sobre_pet p, .sexo p {
+    font-size: 14px; /* Ajuste de tamanho de fonte */
+}
+
+/* Ajuste de tamanho de fonte para botões em telas menores */
+@media screen and (max-width: 480px) {
+    #quero_adotar button {
+        font-size: 12px;
+    }
+}
+.rodape{
+    background-color: #46204D;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.rodape span{
+    color: white;
+    margin: 0 10px;
+}
+
+/* Estilos para telas maiores */
+@media screen and (min-width: 769px) {
+    /* Ajuste para o cabeçalho */
+    .topo {
+        height: 134px;
+    }
+
+    /* Estilo para menu de navegação */
+    #nav-menu {
+        display: flex;
+        float: right;
+        justify-content: end;
+        width: auto;
+        margin-top: 40px;
+    }
+
+    /* Estilos para o menu hambúrguer */
+    .menu-hamburger {
+        display: none;
+    }
+
+    /* Estilo para navegação mobile */
+    .mobile-nav {
+        display: none;
+    }
+
+    /* Ajuste para o título principal */
+    .titulo-principal {
+        margin-left: 94px;
+        margin-top: 50px;
+        width: 523px;
+    }
+
+    /* Ajuste para os cartões */
+    .card__cachorros {
+        width: calc(100% / 3 - 20px);
+        max-width: 300px;
+    }
+}
+
+/* Estilos para telas menores */
+@media screen and (max-width: 768px) {
+    /* Ajuste para o cabeçalho */
+    .topo {
+        height: auto;
+    }
+
+    /* Estilo para o menu de navegação */
+    #nav-menu {
+        display: none;
+    }
+
+    /* Estilo para o menu hambúrguer */
+    .menu-hamburger {
+        display: block;
+    }
+
+    /* Estilo para a navegação mobile */
+    .mobile-nav {
+        display: flex;
+        flex-direction: column;
+        background-color: #46204D;
+        padding-left: 65px;
+    }
+
+    /* Ajuste para o título principal */
+    .titulo-principal {
+        margin-left: 20px;
+        margin-top: 20px;
+        width: auto;
+    }
+
+    /* Ajuste para os cartões */
+    .card__cachorros {
+        width: calc(100% / 2 - 20px);
+        max-width: none;
+    }
+}
+
+/* Estilos para telas pequenas */
+@media screen and (max-width: 480px) {
+    /* Ajuste para o título principal */
+    .titulo-principal {
+        margin-left: 10px;
+        margin-top: 20px;
+        width: auto;
+    }
+
+    /* Ajuste para os cartões */
+    .card__cachorros {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* Ajuste para o botão de adotar */
+    #quero_adotar button {
+        font-size: 12px;
+    }
+}
+
+/* Estilos para as setas */
+#seta_esquerda,
+#seta_direita {
+    color: #46204D;
+    font-size: 2em;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+#seta_esquerda {
+    left: 0;
+}
+
+#seta_direita {
+    right: 0;
+}
+
+/* Outros estilos */
+.informacoes_um {
+    margin: 15px;
+}
+
+.nome span,
+.especie span,
+.idade span,
+.peso span,
+.porte span,
+.local span,
+.sobre_pet span,
+.sexo span {
+    font-size: 12px;
+}
+
+.nome p,
+.especie p,
+.idade p,
+.peso p,
+.porte p,
+.local p,
+.sobre_pet p,
+.sexo p {
+    font-size: 14px;
+}
+
+/* Estilos para o rodapé */
+.rodape {
+    background-color: #46204D;
+    height: 30px;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+.rodape span {
+    color: white;
+    margin: 0 10px;
+}

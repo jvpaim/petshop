@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a60a3dd619.js" crossorigin="anonymous"></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <div class="topo">
+        <header class="header-container" style="display: flex;">
+            <div class="logo">
+                <p>CAAU - CENTRO DE ADOÇÃO DE ANIMAIS DA UCSAL
+                <p>
+            </div>
+            <nav id="nav-menu">
+                <ul><a href="index.html">INICIO</a></ul>
+                <div style="word-spacing: 35px;">&nbsp;</div>
+                <ul><a href="formulario.html">QUERO ADOTAR</a></ul>
+                <div style="word-spacing: 35px;">&nbsp;</div>
+                <ul><a href="cadastrar.html">LOGIN</a></ul>
+            </nav>
+        </header>
+    </div>
+    <div class="titulo">
+        <strong>Formulário de Interesse em Adoção</strong>
+        <p>Bem-vindo(a) ao nosso Formulário de Interesse.</p>
+        <p>Ficamos muito felizes por você ter dado o primeiro passo para adotar um pet.</p>
+        <p>Aqui você irá responder algumas perguntas iniciais para que a ONG/protetor parceiro possa te conhecer melhor
+            e dar agilidade ao processo de adoção. Precisaremos </p>
+        <p>de alguns dados pessoais para que possam entrar em contato com você, além de saber um pouco sobre a sua casa,
+            sua família, estrutura, entre outras informações.</p>
+    </div>
+    <div class="container_form">
+        <div class="info_pessoal">
+            <div class="nome">
+                <label for="nome_completo">Nome Completo</label>
+                <input type="nome_completo" id="nome_completo" style="padding:5px 20px">
+            </div>
+            <div class="cpf">
+                <label for="nome_completo">CPF</label>
+                <input type="" id="CPF" style="padding:5px 20px">
+            </div>
+            <div class="nasc">
+                <label for="data_nascimento">Data de Nascimento</label>
+                <input type="date" max="2024-12-31" id="nascimento" style="padding:5px 20px">
+            </div>
+        </div>
+        <div class="info_social">
+            <div class="end">
+                <label for="endereço">Endereço</label>
+                <input type="" id="endereço" style="padding:5px 20px">
+            </div>
+            <div class="num">
+                <label for="num_casa">N°</label>
+                <input type="" id="num_casa" style="padding:5px 20px">
+            </div>
+            <div class="compl">
+                <label for="complemento">Complemento</label>
+                <select id="complemento" style="padding:5px 20px">
+                    <option value=""></option>
+                    <option value="opcao1">Casa</option>
+                    <option value="opcao2">Apartamento</option>
+
+                </select>
+            </div>
+            <div class="cid_est">
+                <label for="cidade_estado">Cidade/Estado</label>
+                <select id="cidade_estado" style="padding:5px 20px" aria-placeholder="">
+                    <option value=""></option>
+                    <option value="opcao1">Salvador/BA</option>
+                </select>
+            </div>
+        </div>
+        <div class="usuario">
+            <div class="email">
+                <label for="email">E-mail</label>
+                <input type="" id="email" style="padding:5px 20px">
+            </div>
+            <div class="senha">
+                <label for="senha">Senha</label>
+                <input type="" id="senha" style="padding:5px 20px">
+            </div>
+            <div class="celular">
+                <label for="celular">Celular</label>
+                <input type="" id="cel" style="padding:5px 20px">
+            </div>
+        </div>
+        <div class="container__botao">
+            <div class="aviso">
+                <div class="confirmacao">
+                    <input type="checkbox" id="idade" style="margin-top: 15px; margin-left: 15px ">
+                    <p>
+                        Declaro que sou maior de 21 anos, li e estou ciente das informações passadas
+                        e de acordo em compartilhar meus dados para fins de contato por um(a) atendente
+                        do Programa Adoção de Animais da UCSAL.
+                        </label>
+                    </p>
+                </div>
+            </div>
+            <div class="botao__confirmar">
+                <a href="" id="confirmar">
+                    <button>Confirmar</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="rodape">
+        <div class="conteudo__rodape">
+        <span>@caau_adotepet</span>
+        <span>(71)98474-1524</span>
+        <span>cauuadocao@gmail.com</span>
+    </div>
+    </footer>
+
+</body>
+
+</html>

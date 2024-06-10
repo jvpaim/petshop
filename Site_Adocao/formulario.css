@@ -1,0 +1,142 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+}
+
+.topo {
+    background-color: #46204D;
+    padding: 10px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+#nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#nav-menu ul li {
+    margin-right: 20px;
+}
+
+#nav-menu a {
+    color: white;
+    text-decoration: none;
+}
+
+.titulo {
+    text-align: center;
+    margin-top: 35px;
+}
+
+.titulo strong {
+    font-size: 25px;
+}
+
+.titulo p {
+    margin-top: 14px;
+}
+
+.container_form {
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 1em;
+}
+
+.info_pessoal,
+.info_social,
+.usuario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.info_pessoal > div,
+.info_social > div,
+.usuario > div {
+    margin: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"],
+select {
+    border-radius: 8px;
+    height: 34px;
+    width: 100%;
+    padding: 5px 10px;
+}
+
+input[type="date"] {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+select {
+    width: 100%;
+    padding: 5px 10px;
+}
+
+.aviso {
+    background-color: #ECECEC;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.confirmacao {
+    display: flex;
+    align-items: center;
+}
+
+.confirmacao label {
+    margin-left: 10px;
+}
+
+.botao__confirmar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button[type="submit"] {
+    background-color: #46204D;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
+
+.rodape {
+    background-color: #46204D;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
